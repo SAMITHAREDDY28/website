@@ -7,9 +7,9 @@ module.exports.aboutus = function(req, res){
   };
   module.exports.reservation = function(req, res){
     res.render('reservation', { title: 'reservation' ,reservationData:[{
-      name: 'Jane Smith',
-      email: 'janesmith@example.com',
-      phone: '987-654-3210',
+      name: 'John Berk',
+      email: 'johnberk@example.com',
+      phone: '630-013-9723',
       date: new Date('2023-09-05'),
       time: '18:30',
       guests: 2,
