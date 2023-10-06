@@ -3,7 +3,7 @@ var loc=require('./menu')
 require ('dotenv').config();
 const PORT=process.env.PORT || 3000;
 var gracefulShutdown;
-var dbURI = 'mongodb://0.0.0.0:27017/flavorscape';
+var dbURI = 'mongodb://0.0.0.0:27017/telanganaruchulu';
 if(process.env.NODE_ENV === 'production'){
   dbURI=process.env.MONGODB_URI;
 }

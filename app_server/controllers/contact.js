@@ -15,3 +15,4 @@ module.exports.aboutus = function(req, res){
       guests: 2,
   }]});
   };
+require('./contact.js')
