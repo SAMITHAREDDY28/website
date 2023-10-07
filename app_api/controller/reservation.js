@@ -50,31 +50,3 @@ var Reservation = mongoose.model('Reservation');
     }
   };
   
-  module.exports.reservationsUpdateOne = function (req, res) {
-    Reservation.findByIdAndUpdate(
-      req.params.reservationid,
-      { $set: req.body },
-      { new: true }
-    )
-      .exec()
-      .then((reservation) => {
-        sendJsonResponse(res, 200, reservation);
-      })
-      .catch((err) => {
-        console.error(err);
-        sendJsonResponse(res, 500, { error: 'An error occurred' });
-      });
-  };
-  
-  module.exports.reservationsDeleteOne = function (req, res) {
-    Reservation.findByIdAndRemove(req.params.reservationid)
-      .exec()
-      .then(() => {
-        sendJsonResponse(res, 204, null);
-      })
-      .catch((err) => {
-        console.error(err);
-        sendJsonResponse(res, 500, { error: 'An error occurred' });
-      });
-  };
-  
