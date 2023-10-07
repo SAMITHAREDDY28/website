@@ -11,16 +11,16 @@ module.exports.home = function(req, res){
     
     menuItems: [
       {
-        name: "Chicken Tikka Masala",
-        price: 300,
-        description: "Tender pieces of chicken marinated in a blend of aromatic spices, cooked in a luscious tomato-based gravy. Served with fragrant basmati rice.",
-        rating: 4,
+        name: "chicken tikka masala",
+        price: 349,
+        description: "tender chicken marinated with top quality spices",
+        rating: 4.5,
          
       },
       {
-        name: "Lamb Kebabs",
-        price: 400,
-        description: "Succulent lamb kebabs seasoned with a medley of spices and grilled to perfection. Served with mint chutney and naan bread.",
+        name: "kebabs",
+        price: 599,
+        description: "made with medley of spices and grilled to perfection",
         rating: 5,
        
       },
@@ -32,10 +32,10 @@ module.exports.home = function(req, res){
         
       },
       {
-        name: "Chicken Biryani",
-        price: 400,
-        description: "Chicken Biryani is a fragrant South Asian dish that combines marinated chicken with aromatic basmati rice, expertly layered and cooked with a blend of spices. The result is a flavorful and captivating culinary experience that's enjoyed globally.",
-        rating: 4,
+        name: "chicken biryani",
+        price: 299,
+        description: "it is a fragrant south indian dish that combines combined with aromatic basmati rice and a expertly layered and cooked with blend of spices",
+        rating: 4.9,
         
       }
     ]
@@ -47,10 +47,10 @@ module.exports.home = function(req, res){
     res.render('veg', { title: 'veg Menu',
     menuItems : [
       {
-        name: "Paneer Tikka Masala",
-        price: 280,
-        description: "Succulent pieces of paneer (Indian cottage cheese) are marinated in a blend of spices, skewered, and char-grilled to perfection. Served in a rich tomato and onion-based masala sauce, this dish offers a delightful combination of flavors and textures.",
-        rating: 5,
+        name: "paneer tikka masala",
+        price: 350,
+        description: "made with soft and tender paneer along with aromatic spices",
+        rating: 4,
         
       },
       {

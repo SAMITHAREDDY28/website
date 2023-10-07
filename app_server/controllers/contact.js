@@ -7,12 +7,12 @@ module.exports.aboutus = function(req, res){
   };
   module.exports.reservation = function(req, res){
     res.render('reservation', { title: 'reservation' ,reservationData:[{
-      name: 'John Berk',
-      email: 'johnberk@example.com',
-      phone: '630-013-9723',
-      date: new Date('2023-09-05'),
-      time: '18:30',
-      guests: 2,
+      name:"John berk",
+      email:"johnberk@example.com",
+      phone:"6300139723",
+      date:"2023-09-05",
+      time:"18:40",
+      guests:4
   }]});
   };
 require('./contact.js')
