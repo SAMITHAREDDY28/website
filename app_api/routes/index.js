@@ -31,7 +31,7 @@ module.exports = router;
 
 
 module.exports = router;
-app.get('/error', (req, res) => {
+router.get('/error', (req, res) => {
     // Define the title variable
     const title = 'Error Page'; // Replace with your desired title
     

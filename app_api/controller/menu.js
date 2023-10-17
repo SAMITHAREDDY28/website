@@ -48,3 +48,4 @@ var sendJsonResponse = function (res, status, content) {
       sendJsonResponse(res, 500, { error: 'An error occurred' });
     }
   };
+  
