@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var menuItemController = require('../controller/menu');
-var reservationController = require('../controller/reservation'); 
+var menuItemController = require('../controller/menuItem');
+//var reservationController = require('../controller/reservation'); 
 
 //menuitems
 router.post('/menuItems', menuItemController.menuItemsCreate);

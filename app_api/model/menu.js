@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var menuItemSchema = new mongoose.Schema({
+var booksItemSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -41,10 +41,6 @@ var reservationSchema = new mongoose.Schema({
       type: String,
       required: true,
     },
-    guests: {
-      type: Number,
-      required: true,
-    },
   });
-mongoose.model('MenuItem', menuItemSchema);
+mongoose.model('menuItems', booksItemSchema);
 mongoose.model('Reservation', reservationSchema);
